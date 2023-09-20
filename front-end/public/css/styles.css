@@ -1,0 +1,30 @@
+h1{
+    padding: 80px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.link-container{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.more-link button{
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+img{
+    height: 40px;
+    padding: 50px;
+}
