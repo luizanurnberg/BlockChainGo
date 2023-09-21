@@ -14,6 +14,7 @@ Projeto para treino de MVC e API
 # Testes
 Para rodar a aplicação é necessário
  - Possuir o Node instalado na máquina
+ - Digitar "npm install"
  - Digitar "npm run start"
  
  # Interface
