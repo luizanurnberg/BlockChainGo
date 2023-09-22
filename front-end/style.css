@@ -4,8 +4,8 @@ body {
     justify-content: center; 
     align-items: center; 
     height: 50vh; 
-    margin: 0; /* Remove margens padrão do body */
-    background-color: #f0f0f0; /* Cor de fundo da página */
+    margin: 0; 
+    background-color: #f0f0f0; 
 }
 
 .container {
