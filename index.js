@@ -22,32 +22,6 @@ app.post("/registerVoter", async (req, res) => {
   }
 });
 
-app.post("/vote", async (req, res) => {
-  try {
-    const { accountAddress, proposalId } = req.body;
-    const receipt = await vote(accountAddress, proposalId);
-    res.json({ message: "Voto registrado com sucesso", receipt });
-  } catch (error) {
-    res
-      .status(500)
-      .json({ error: "Erro ao registrar voto", message: error.message });
-  }
-});
-
 app.listen(8000, () => {
   console.log("API rodando na porta 8000");
 });
-
-async function vote(accountAddress, proposalId) {
-  const gas = await contract.methods.vote(proposalId).estimateGas();
-  const data = contract.methods.vote(proposalId).encodeABI();
-  const tx = {
-    to: contractAddress.toString(),
-    data,
-    gas,
-    from: accountAddress.toString(),
-  };
-
-  const receipt = await web3.eth.sendTransaction(tx);
-  return receipt;
-}
