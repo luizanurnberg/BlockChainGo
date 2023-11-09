@@ -4,7 +4,7 @@ const VotingSystem = require("../VotingSystem.Ethereum/build/contracts/VotingSys
 const { Web3 } = require("web3");
 const { toBigInt } = require("web3-utils");
 const rcpEndpoint = "http://127.0.0.1:7545";
-const contractAddress = "0xDb57FfA809c1ce2059576b2e18B11a98B425197b";
+const contractAddress = "0xFf76C12062791E21CbA79A8036278e82B5829991"; //COLOCAR O ADDRESS QUE APARECER APÓS RODAR O MIGRATE
 const contractABI = VotingSystem.abi;
 const app = express();
 app.use(express.json());
